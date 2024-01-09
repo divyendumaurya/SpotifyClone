@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Stream your favourite music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"> <img src="./assets/logo.png" alt="spotfyimg"> Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+
+    <!-- landing Page  -->
+    <section>
+        <div class="hero">
+
+            <div class="card">
+                <img src="./assets/covers/2.jpg" alt="no">
+                <h2>Listen to the best of One Direction!
+                    <a href="#section2">
+                        <button class="btn">
+
+                            <span>Listen Now
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+
+
+                        </button>
+                    </a>
+                </h2>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="sectionPlay" id="section2">
+        <div class="container">
+
+            <div class="songslist">
+                <h1>Best of One Direction</h1>
+
+                <div class="songsItemContainer">
+                    <div class="songsItem">
+                        <img alt="1">
+
+
+                        <span class="songName">Steal my Girl</span>
+                        <span class="songlistplay"><span class="timeStamp"><span id="endTime">03:48</span>
+
+                                <i id="0" class="fas fa songItemPlay fa-play-circle"></i></span> </span>
+
+                    </div>
+                    <div class="songsItem">
+                        <img alt="1">
+                        <span class="songName">Steal my Girl</span>
+                        <span class="songlistplay"><span class="timeStamp"><span id="endTime">03:18</span> <i id="1"
+                                    class="fas fa songItemPlay fa-play-circle"></i></span> </span>
+
+                    </div>
+                    <div class="songsItem">
+                        <img alt="1">
+                        <span class="songName">Steal my Girl</span>
+                        <span class="songlistplay"><span class="timeStamp"><span id="endTime">04:05</span> <i id="2"
+                                    class="fas fa songItemPlay fa-play-circle"></i></span> </span>
+
+                    </div>
+                    <div class="songsItem">
+                        <img alt="1">
+                        <span class="songName">Steal my Girl</span>
+                        <span class="songlistplay"><span class="timeStamp"><span id="endTime">03:58</span> <i id="3"
+                                    class="fas fa songItemPlay fa-play-circle"></i></span> </span>
+
+                    </div>
+                    <div class="songsItem">
+                        <img alt="1">
+                        <span class="songName">Steal my Girl</span>
+                        <span class="songlistplay"><span class="timeStamp"><span id="endTime">03:12</span> <i id="4"
+                                    class="fas fa songItemPlay fa-play-circle"></i></span> </span>
+
+                    </div>
+                    <div class="songsItem">
+                        <img alt="1">
+                        <span class="songName">Steal my Girl</span>
+                        <span class="songlistplay"><span class="timeStamp"><span id="endTime">03:20</span> <i id="5"
+                                    class="fas fa songItemPlay fa-play-circle"></i></span> </span>
+
+                    </div>
+                    <div class="songsItem">
+                        <img alt="1">
+                        <span class="songName">Steal my Girl</span>
+                        <span class="songlistplay"><span class="timeStamp"><span id="endTime">03:26</span> <i id="6"
+                                    class="fas fa songItemPlay fa-play-circle"></i></span> </span>
+
+                    </div>
+                    <div class="songsItem">
+                        <img alt="1">
+                        <span class="songName">Steal my Girl</span>
+                        <span class="songlistplay"><span class="timeStamp"><span id="endTime">03:04</span> <i id="7"
+                                    class="fas fa songItemPlay fa-play-circle"></i></span> </span>
+
+                    </div>
+                    <div class="songsItem">
+                        <img alt="1">
+                        <span class="songName">Steal my Girl</span>
+                        <span class="songlistplay"><span class="timeStamp"><span id="endTime">03:50</span> <i id="8"
+                                    class="fas fa songItemPlay fa-play-circle"></i></span> </span>
+
+                    </div>
+                    <div class="songsItem">
+                        <img alt="1">
+                        <span class="songName">Steal my Girl</span>
+                        <span class="songlistplay"><span class="timeStamp"><span id="endTime">03:14</span> <i id="9"
+                                    class="fas fa songItemPlay fa-play-circle"></i></span> </span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="songbanner"></div>
+
+        </div>
+
+        <div class="bottom">
+            <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0">
+            <div class="icons">
+                <i class="fas fa-3x fa-step-backward" id="previous"></i>
+                <i class="fas fa-3x fa-play-circle" id="masterPlay"></i>
+                <i class="fas fa-3x fa-step-forward" id="next"></i>
+            </div>
+            <div class="volume">
+                <i class="fa-solid fa-volume-high" id="volumeIcon"></i>
+                <input type="range" name="volume" id="volBar">
+
+            </div>
+
+            <div class="songInfo">
+                <img src="./assets/playing.gif" alt="playing" width="55px" id="gif"> <span id="masterSongName"> Steal my
+                    Girl - One Direction</span> <span id="currStart"></span>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <!-- Font icon cdn  -->
+    <script src="https://kit.fontawesome.com/d81fe71f88.js" crossorigin="anonymous"></script>
+    <!-- Smooth Scroll Cdn  -->
+    <script src="https://cdn.jsdelivr.net/gh/LieutenantPeacock/SmoothScroll@1.2.0/src/smoothscroll.min.js"
+        integrity="sha384-UdJHYJK9eDBy7vML0TvJGlCpvrJhCuOPGTc7tHbA+jHEgCgjWpPbmMvmd/2bzdXU"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
